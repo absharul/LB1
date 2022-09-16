@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example of Services"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sharul is learning"
+        android:layout_marginTop="120dp"
+        android:textColor="#0CB3BA"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <View
+        android:layout_marginTop="165dp"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@color/black"/>
+
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/imp1" />
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_end"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="410dp"
+        android:layout_marginBottom="50dp"
+        style="@style/CardView"
+        android:onClick="startService"
+        android:backgroundTint="#615D5F"
+        android:text="Start Service"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        style="@style/CardView"
+        android:id="@+id/bt_end"
+        android:onClick="stopService"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="460dp"
+        android:layout_marginBottom="95dp"
+        android:backgroundTint="#356B7C"
+        android:text="Stop service"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
